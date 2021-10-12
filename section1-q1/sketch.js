@@ -8,7 +8,10 @@ function setup(){
   strokeWeight(25);
   strokeCap(SQUARE);
   arc(100 + 25, 100, 100, 100, QUARTER_PI * 3, QUARTER_PI * 3 + PI);
-  // BLANK[1]
+  noFill();
+  strokeWeight(25);
+  strokeCap(SQUARE);
+  arc(100 - 25, 100, 100, 100, QUARTER_PI * 5, QUARTER_PI * 5 + PI);
 
   // おまけ：神戸大学のロゴを作りたい人向けに色情報だけ置いておきます
   const red = color(196, 0, 0);
