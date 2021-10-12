@@ -7,6 +7,7 @@ function setup(){
   noFill();
   strokeWeight(25);
   strokeCap(SQUARE);
+  stroke(22,131,46)
   arc(100 + 25, 100, 100, 100, QUARTER_PI * 3, QUARTER_PI * 3 + PI);
   noFill();
   strokeWeight(25);
