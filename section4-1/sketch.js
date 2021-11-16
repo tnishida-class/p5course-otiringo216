@@ -1,3 +1,4 @@
+
 // テキスト「配列」～「配列を使った描画」までを収録
 function setup(){
   createCanvas(400, 400);
