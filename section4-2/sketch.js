@@ -16,6 +16,7 @@ function draw(){
     ellipse(b.x, b.y, b.size);
     b.x += b.vx;
     b.y += b.vy;
+
   }
 }
 
@@ -23,8 +24,10 @@ function mouseDragged(){
   const dx = mouseX - pmouseX;
   const dy = mouseY - pmouseY;
   if(mag(dx, dy) > 5){
-    const b = { x: mouseX, y: mouseY, size: 20, vx: dx, vy: dy };
+    const b = { x: mouseX, y: mouseY, size:20, vx: dx, vy: dy };
+    b.size=random(20,100)
     balls.push(b);
+
   }
 }
 

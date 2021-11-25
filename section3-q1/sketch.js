@@ -10,7 +10,15 @@ function setup(){
 
 function draw(){
   background(160, 192, 255);
-  count = (count + 1) % cycle;
-  // BLANK[1]
+  noStroke();
+  fill(180,0,0);
+  if(mouseIsPressed){
+    count = (count + 5) % cycle;
+  }
+  else{
+    count = (count + 2) % cycle;
+  }
+  size = 110 + count
+   // BLANK[1]
   ellipse(width / 2, height / 2, size);
 }
